@@ -9,6 +9,6 @@ Wordpress structured to work on two Virtual Machines.
 
 Containers are launched with commands:
 
-**sudo docker run -v config-file.cnf:/etc/mysql/conf.d \ -v /wp:/var/lib/mysql -p 3306:3306 testi4**
+**sudo docker run -v config-file.cnf:/etc/mysql/conf.d -v ~/test/wp:/var/lib/mysql --env-file=env -p 3306:3306 testi5**
 
-**sudo docker run -p 80:80 -v /w:/var/www/html testi5**
+**sudo docker run -p 80:80 -v ~/test/wordpress:/var/www/html --env-file=env testi7**
